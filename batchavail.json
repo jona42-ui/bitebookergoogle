@@ -1,0 +1,542 @@
+{
+   "merchant_id" : "1234",
+   "slot_time" : [
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606485600"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606485600"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606486500"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606486500"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82726"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606491900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82726"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606492800"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606500900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606500900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606504500"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606506300"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606506300"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606506300"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606507200"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606507200"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606507200"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606508100"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606508100"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606508100"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606509000"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606509000"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606509000"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606509900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606509900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606509900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606510800"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606510800"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606510800"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606510800"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606511700"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606511700"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606511700"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606511700"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82726"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606512600"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606512600"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606512600"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606512600"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606512600"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82726"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606513500"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606513500"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606513500"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606513500"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606513500"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606514400"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606514400"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606514400"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606514400"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606515300"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606515300"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606515300"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606515300"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606516200"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606516200"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606516200"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606516200"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606517100"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606517100"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606517100"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606517100"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606518000"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606518000"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606518000"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606518000"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82726"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606518900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "103685"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606518900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82722"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606518900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "82725"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606518900"
+      },
+      {
+         "duration_sec" : "1800",
+         "resource_ids" : {
+            "staff_id" : "528968"
+         },
+         "service_id" : "5678",
+         "start_sec" : "1606518900"
+      }
+   ]
+}
+

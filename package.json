@@ -1,0 +1,12 @@
+{
+  "name": "js-maps-booking-rest-server-v3-skeleton",
+  "version": "1.0.0",
+  "description": "This is a reference implementation of [API v3 Booking Server](https://developers.google.com/maps-booking/guides/partner-implementing-booking-server-1) based on Node.js",
+  "main": "apiv3methods.js",
+  "scripts": {
+    "start": "node bookingserver.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

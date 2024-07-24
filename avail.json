@@ -1,0 +1,42 @@
+{
+   "metadata": {
+    "processing_instruction": "PROCESS_AS_COMPLETE",
+    "total_shards": 1,
+    "shard_number": 0,
+    "generation_timestamp": 1462926569
+  },
+  "service_availability": [
+    {
+      "availability": [
+        {
+          "merchant_id": "plmb_04",
+          "service_id": "plmb_04_repair_02",
+          "spots_total": 2,
+          "spots_open": 2,
+          "duration_sec": 5400,
+          "start_sec": 1535806800,
+          "confirmation_mode": "CONFIRMATION_MODE_SYNCHRONOUS"
+        },
+        {
+          "merchant_id": "plmb_04",
+          "service_id": "plmb_04_repair_02",
+          "spots_total": 2,
+          "spots_open": 1,
+          "duration_sec": 5400,
+          "start_sec": 1535817600,
+          "confirmation_mode": "CONFIRMATION_MODE_SYNCHRONOUS"
+        },
+        {
+          "merchant_id": "elct_12",
+          "service_id": "elct_12_install_01",
+          "spots_total": 1,
+          "spots_open": 1,
+          "duration_sec": 5400,
+          "start_sec": 1535832000,
+          "confirmation_mode": "CONFIRMATION_MODE_SYNCHRONOUS"
+        }
+      ]
+    }
+  ]
+}
+

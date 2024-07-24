@@ -30,7 +30,7 @@
  */
 
 require('dotenv').config();
-const usernamePassword = 'bitebooker:bitebooker1';
+const usernamePassword = 'bitebooker:bitebooker2';
 
 const http = require('http');
 const apiv3 = require('./apiv3methods.js');

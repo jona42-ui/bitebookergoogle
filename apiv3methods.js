@@ -45,6 +45,7 @@ function HealthCheck(requestBody) {
   return responseBody;
 }
 
+
 /**
  * BatchAvailabilityLookup method
  * https://developers.google.com/maps-booking/reference/rest-api-v3/batchavailabilitylookup-method

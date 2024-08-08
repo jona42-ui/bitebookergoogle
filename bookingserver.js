@@ -2,7 +2,7 @@
 // booking-server.js
 require("dotenv").config();
 const port = process.env.PORT | 8080;
-const usernamePassword = "bitbooker:bitebooker";
+const usernamePassword = "bitbooker:bitbooker";
 
 const http = require("http");
 const apiv3 = require("./apiv3methods.js");

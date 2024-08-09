@@ -1,7 +1,5 @@
-
-// booking-server.js
 require("dotenv").config();
-const port = process.env.PORT | 8080;
+const port = process.env.PORT || 8080;
 const usernamePassword = "bitbooker:bitbooker";
 
 const http = require("http");
@@ -25,10 +23,7 @@ const server = http.createServer((request, response) => {
         return;
     }
 
-    const path = url.endsWith("/")
-        ? url.slice(0, -1).toLowerCase()
-        : url.toLowerCase();
-
+    const path = url.endsWith("/") ? url.slice(0, -1).toLowerCase() : url.toLowerCase();
     console.log(`HTTP Request ${method} ${path}`);
 
     let requestBody = [];
@@ -49,7 +44,7 @@ const server = http.createServer((request, response) => {
             if (method === "GET") {
                 if (path === "/v3/healthcheck") {
                     try {
-                        responseBody = apiv3.HealthCheck(requestBody);
+                        responseBody = apiv3.HealthCheck();
                     } catch (e) {
                         httpCode = 500; // Internal Server Error
                         console.log(`Error: ${e}`);
@@ -63,61 +58,13 @@ const server = http.createServer((request, response) => {
                 try {
                     switch (path) {
                         case "/v3/batchavailabilitylookup":
-                            responseBody =
-                                apiv3.BatchAvailabilityLookup(
-                                    requestBody
-                                );
-                            break;
-                        case "/v3/checkavailability":
-                            responseBody =
-                                apiv3.CheckAvailability(requestBody);
+                            responseBody = apiv3.BatchAvailabilityLookup(requestBody);
                             break;
                         case "/v3/createbooking":
-                            responseBody =
-                                apiv3.CreateBooking(requestBody);
+                            responseBody = apiv3.CreateBooking(requestBody);
                             break;
                         case "/v3/updatebooking":
-                            responseBody =
-                                apiv3.UpdateBooking(requestBody);
-                            break;
-                        case "/v3/getbookingstatus":
-                            responseBody =
-                                apiv3.GetBookingStatus(requestBody);
-                            break;
-                        case "/v3/listbookings":
-                            responseBody =
-                                apiv3.ListBookings(requestBody);
-                            break;
-                        case "/v3/checkorderfulfillability":
-                            responseBody =
-                                apiv3.CheckOrderFulfillability(
-                                    requestBody
-                                );
-                            break;
-                        case "/v3/createorder":
-                            responseBody =
-                                apiv3.CreateOrder(requestBody);
-                            break;
-                        case "/v3/listorders":
-                            responseBody = apiv3.ListOrders(requestBody);
-                            break;
-                        case "/v3/batchgetwaitestimates":
-                            responseBody =
-                                apiv3.BatchGetWaitEstimates(
-                                    requestBody
-                                );
-                            break;
-                        case "/v3/createwaitlistentry":
-                            responseBody =
-                                apiv3.CreateWaitlistEntry(requestBody);
-                            break;
-                        case "/v3/deletewaitlistentry":
-                            responseBody =
-                                apiv3.DeleteWaitlistEntry(requestBody);
-                            break;
-                        case "/v3/getwaitlistentry":
-                            responseBody =
-                                apiv3.GetWaitlistEntry(requestBody);
+                            responseBody = apiv3.UpdateBooking(requestBody);
                             break;
                         default:
                             httpCode = 400; // Bad Request

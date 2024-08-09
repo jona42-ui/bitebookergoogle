@@ -13,11 +13,11 @@ const server = http.createServer((request, response) => {
     if (authorization) {
         const encodedString = authorization.replace("Basic ", "");
         const decodedBuffer = Buffer.from(encodedString, "base64");
-        decodedString = decodedBuffer.toString(); // "username:password"
+        decodedString = decodedBuffer.toString(); 
     }
 
     if (decodedString !== usernamePassword) {
-        response.statusCode = 401; // Unauthorized
+        response.statusCode = 401; 
         response.setHeader("Content-Type", "text/plain");
         response.end("Unauthorized Request");
         return;
@@ -37,7 +37,7 @@ const server = http.createServer((request, response) => {
         .on("end", () => {
             requestBody = Buffer.concat(requestBody).toString();
 
-            let httpCode = 200; // OK
+            let httpCode = 200; 
             let responseBody = "";
             let contentType = "application/json";
 
@@ -46,11 +46,11 @@ const server = http.createServer((request, response) => {
                     try {
                         responseBody = apiv3.HealthCheck();
                     } catch (e) {
-                        httpCode = 500; // Internal Server Error
+                        httpCode = 500; 
                         console.log(`Error: ${e}`);
                     }
                 } else {
-                    httpCode = 400; // Bad Request
+                    httpCode = 400; 
                     contentType = "text/plain";
                     responseBody = "Request Not Supported";
                 }
@@ -67,17 +67,17 @@ const server = http.createServer((request, response) => {
                             responseBody = apiv3.UpdateBooking(requestBody);
                             break;
                         default:
-                            httpCode = 400; // Bad Request
+                            httpCode = 400; 
                             contentType = "text/plain";
                             responseBody = "Request Not Supported";
                             break;
                     }
                 } catch (e) {
-                    httpCode = 500; // Internal Server Error
+                    httpCode = 500; 
                     console.log(`Error: ${e}`);
                 }
             } else {
-                httpCode = 405; // Method Not Allowed
+                httpCode = 405; 
                 contentType = "text/plain";
                 responseBody = "Request Not Supported";
             }

@@ -1,5 +1,7 @@
 // apiv3methods.js
 
+const { v4: uuidv4 } = require('uuid');
+
 function HealthCheck() {
     const resp = {
         status: "Healthy",
@@ -32,9 +34,11 @@ function CreateBooking(requestBody) {
         throw new Error("Invalid request: missing slot or user_information");
     }
 
+    const bookingId = uuidv4();
+
     const resp = {
         booking: {
-            booking_id: "1234",
+            booking_id: bookingId,
             slot: req.slot,
             user_information: { user_id: req.user_information.user_id },
             payment_information: req.payment_information,

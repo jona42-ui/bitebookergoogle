@@ -17,7 +17,7 @@ function BatchAvailabilityLookup(requestBody) {
         throw new Error("Invalid request: missing or invalid slots time");
     }
 
-    console.log(requestBody);
+    console.log("request body:",requestBody);
 
     // Create the slot_time_availability array using a loop
     const slotTimeAvailability = req.slot_time.map(slot_time => {
@@ -39,7 +39,7 @@ function BatchAvailabilityLookup(requestBody) {
     const jsonResponse = JSON.stringify(response);
 
     // Print the JSON response
-    console.log(jsonResponse);
+    console.log("response body:",jsonResponse);
 }
 
 function CreateBooking(requestBody) {

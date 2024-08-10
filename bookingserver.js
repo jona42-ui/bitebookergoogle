@@ -81,9 +81,10 @@ const server = http.createServer((request, response) => {
                 contentType = "text/plain";
                 responseBody = "Request Not Supported";
             }
+            console.log("response", responseBody);
 
             response.statusCode = httpCode;
-            response.setHeader("Content-Type", contentType);
+            response.setHeader("text/plain");
             response.end(responseBody);
         });
 });

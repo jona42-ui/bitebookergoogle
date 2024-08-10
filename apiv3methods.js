@@ -10,21 +10,36 @@ function HealthCheck() {
 }
 
 function BatchAvailabilityLookup(requestBody) {
+
     const req = JSON.parse(requestBody);
 
-    if (!req.slots || !Array.isArray(req.slots)) {
-        throw new Error("Invalid request: missing or invalid slots");
+    if (!req.slot_time || !Array.isArray(req.slot_time)) {
+        throw new Error("Invalid request: missing or invalid slots time");
     }
 
-    const resp = {
-        slots: req.slots.map((slot) => ({
-            slot,
-            count_available: 1,
-            duration_requirement: "DURATION_REQUIREMENT_UNSPECIFIED",
-        })),
+    console.log(requestBody);
+
+    // Create the slot_time_availability array using a loop
+    const slotTimeAvailability = req.slot_time.map(slot => {
+        return {
+            "slot_time": {
+                "service_id": slot.service_id,
+                "start_sec": slot.start_sec
+            },
+            "available": slot.available
+        };
+    });
+
+    // Define the response object
+    const response = {
+        "slot_time_availability": slotTimeAvailability
     };
 
-    return JSON.stringify(resp);
+    // Convert the response object to a JSON string
+    const jsonResponse = JSON.stringify(response, null, 2);
+
+    // Print the JSON response
+    console.log(jsonResponse);
 }
 
 function CreateBooking(requestBody) {

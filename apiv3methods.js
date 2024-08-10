@@ -18,14 +18,12 @@ function BatchAvailabilityLookup(requestBody) {
     }
 
     console.log("request body:",req);
-    console.log( "service_id:", req.slot_time[0].service_id);
-
     // Create the slot_time_availability array using a loop
     const slotTimeAvailability = req.slot_time.map(slot_time => {
         return {
             "slot_time": {
-                "service_id": req.slot_time.service_id,
-                "start_sec": req.slot_time.start_sec
+                "service_id": slot_time.service_id,
+                "start_sec": slot_time.start_sec
             },
             "available": true
         };

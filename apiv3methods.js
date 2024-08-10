@@ -40,6 +40,8 @@ function BatchAvailabilityLookup(requestBody) {
 
     // Print the JSON response
     console.log("response body:",jsonResponse);
+
+    return jsonResponse;
 }
 
 function CreateBooking(requestBody) {

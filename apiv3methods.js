@@ -17,7 +17,8 @@ function BatchAvailabilityLookup(requestBody) {
         throw new Error("Invalid request: missing or invalid slots time");
     }
 
-    console.log("request body:",requestBody);
+    console.log("request body:",req);
+    console.log( "service_id:", req.slot_time[0].service_id);
 
     // Create the slot_time_availability array using a loop
     const slotTimeAvailability = req.slot_time.map(slot_time => {

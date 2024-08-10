@@ -20,7 +20,7 @@ function BatchAvailabilityLookup(requestBody) {
     console.log(requestBody);
 
     // Create the slot_time_availability array using a loop
-    const slotTimeAvailability = req.slot_time.map(slot_time_availability => {
+    const slotTimeAvailability = req.slot_time.map(slot_time => {
         return {
             "slot_time": {
                 "service_id": req.slot_time.service_id,
@@ -36,7 +36,7 @@ function BatchAvailabilityLookup(requestBody) {
     };
 
     // Convert the response object to a JSON string
-    const jsonResponse = JSON.stringify(response, null, 2);
+    const jsonResponse = JSON.stringify(response);
 
     // Print the JSON response
     console.log(jsonResponse);

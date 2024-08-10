@@ -84,7 +84,8 @@ const server = http.createServer((request, response) => {
             console.log("response", responseBody);
 
             response.statusCode = httpCode;
-            response.setHeader("text/plain");
+            contentType = "text/plain";
+            response.setHeader(contentType);
             response.end(responseBody);
         });
 });

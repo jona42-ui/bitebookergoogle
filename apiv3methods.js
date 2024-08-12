@@ -125,7 +125,6 @@ function UpdateBooking(requestBody) {
         });
     }
 
-    // Apply the updates to the booking
     const updatedBooking = {
         ...existingBooking,
         status: req.booking.status || existingBooking.status,
@@ -133,7 +132,7 @@ function UpdateBooking(requestBody) {
         party_size: req.booking.party_size || existingBooking.party_size
     };
 
-    // Placeholder: Update the booking in your database
+    // Placeholder: Update the booking in our database
     saveBookingToDatabase(updatedBooking);
 
     // Placeholder: Check if payment option needs to be updated
@@ -145,7 +144,6 @@ function UpdateBooking(requestBody) {
         };
     }
 
-    // Return the updated booking response
     return JSON.stringify({
         booking: updatedBooking,
         user_payment_option: userPaymentOption
@@ -177,7 +175,6 @@ function saveBookingToDatabase(booking) {
     // Implement your database save logic here
     console.log(`Booking ${booking.booking_id} updated in the database.`);
 }
-
 
 
 module.exports = {

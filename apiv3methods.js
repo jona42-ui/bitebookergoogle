@@ -73,6 +73,9 @@ function CreateBooking(requestBody) {
 
     const bookingId = uuidv4();
 
+    console.log("Received user_information:", req.user_information);
+
+
     const booking = {
         booking_id: bookingId,
         slot: req.slot,

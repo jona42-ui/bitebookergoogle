@@ -137,7 +137,7 @@ function UpdateBooking(requestBody) {
     saveBookingToDatabase(updatedBooking);
 
     // Placeholder: Check if payment option needs to be updated
-    const userPaymentOption = null;
+    let userPaymentOption = null; // Changed from const to let
     if (req.booking.status === "CANCELED") {
         // Logic to handle payment updates, e.g., refund or credit
         userPaymentOption = {
@@ -177,6 +177,7 @@ function saveBookingToDatabase(booking) {
     // Implement your database save logic here
     console.log(`Booking ${booking.booking_id} updated in the database.`);
 }
+
 
 
 module.exports = {

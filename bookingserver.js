@@ -1,6 +1,6 @@
 require("dotenv").config();
 const port = process.env.PORT || 8080;
-const usernamePassword = "bitbooker:bitbooker";
+const usernamePassword = `${process.env.BASIC_AUTH_USERNAME}:${process.env.BASIC_AUTH_PASSWORD}`;
 
 const http = require("http");
 const apiv3 = require("./apiv3methods.js");
@@ -59,7 +59,7 @@ const server = http.createServer((request, response) => {
                     switch (path) {
                         case "/v3/batchavailabilitylookup":
                             responseBody = apiv3.BatchAvailabilityLookup(requestBody);
-                          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp  break;
+                            break;
                         case "/v3/createbooking":
                             responseBody = apiv3.CreateBooking(requestBody);
                             break;

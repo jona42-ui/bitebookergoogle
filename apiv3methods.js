@@ -23,13 +23,17 @@ function BatchAvailabilityLookup(requestBody) {
 
     const slotTimeAvailability = req.slot_time.map(slot_time => {
         return {
+            "available": true,
             "slot_time": {
-                "service_id": slot_time.service_id,
-                "start_sec": slot_time.start_sec
+                "duration_sec": slot_time.duration_sec,
+                "resource_ids": {
+                    "party_size": slot_time.party_size
+                }
             },
-            "available": true
+            "service_id": slot_time.service_id,
+            "start_sec": slot_time.start_sec
         };
-    });
+    }); 
 
     // Define the response object
     const response = {

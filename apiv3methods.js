@@ -27,7 +27,7 @@ function BatchAvailabilityLookup(requestBody) {
             "slot_time": {
                 "duration_sec": slot_time.duration_sec,
                 "resource_ids": {
-                    "party_size": slot_time.party_size
+                    "party_size": slot_time.resource_ids.party_size
                 }
             },
             "service_id": slot_time.service_id,

@@ -219,7 +219,7 @@ function UpdateBooking(requestBody) {
         booking_id: req.booking.booking_id,
         status: req.booking.status || "CONFIRMED",  
         slot: {
-            duration_sec: req.booking.slot.duration_sec || 1800,  
+            duration_sec: req.booking.slot?.duration_sec || 1800,  
             merchant_id: req.booking.slot.merchant_id || "1234",  
             service_id: req.booking.slot.service_id || "5678",    
             start_sec: req.booking.slot.start_sec || 1606473000,  

@@ -12,7 +12,7 @@ function HealthCheck() {
 }
 
 function BatchAvailabilityLookup(requestBody) {
-
+    console.log("request body:",requestBody);
     const req = JSON.parse(requestBody);
 
     if (!req.slot_time || !Array.isArray(req.slot_time)) {

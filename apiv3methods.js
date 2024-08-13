@@ -214,17 +214,21 @@ function UpdateBooking(requestBody) {
         });
     }
 
+    // Ensure that slot and resources objects are defined
+    const slot = req.booking.slot || {};
+    const resources = slot.resources || {};
+
     // Generate the dynamic response based on the incoming request
     const responseBooking = {
         booking_id: req.booking.booking_id,
         status: req.booking.status || "CONFIRMED",  
         slot: {
-            duration_sec: req.booking.slot?.duration_sec || 1800,  
-            merchant_id: req.booking.slot.merchant_id || "1234",  
-            service_id: req.booking.slot.service_id || "5678",    
-            start_sec: req.booking.slot.start_sec || 1606473000,  
+            duration_sec: slot.duration_sec || 1800,  
+            merchant_id: slot.merchant_id || "1234",  
+            service_id: slot.service_id || "5678",    
+            start_sec: slot.start_sec || 1606473000,  
             resources: {
-                party_size: req.booking.slot.resources?.party_size || 2 
+                party_size: resources.party_size || 2  
             }
         },
         payment_information: {
@@ -243,8 +247,6 @@ function UpdateBooking(requestBody) {
         booking: responseBooking
     });
 }
-
-
 
 module.exports = {
     HealthCheck,

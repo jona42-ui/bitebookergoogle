@@ -28,12 +28,29 @@ function BatchAvailabilityLookup(requestBody) {
                 "duration_sec": slot_time.duration_sec,
                 "resource_ids": {
                     "party_size": slot_time.resource_ids.party_size
-                }
-            },
-            "service_id": slot_time.service_id,
-            "start_sec": slot_time.start_sec
+                },
+                "service_id": slot_time.service_id,
+                "start_sec": slot_time.start_sec
+            }
         };
     }); 
+
+
+    // {
+    //     "slot_time_availability": [
+    //         {
+    //             "available": true,
+    //             "slot_time": {
+    //                 "duration_sec": "1800",
+    //                 "resource_ids": {
+    //                     "party_size": 2
+    //                 },
+    //                 "service_id": "5678",
+    //                 "start_sec": "1606467600"
+    //             }
+    //         }
+    //     ]
+    // }
 
     // Define the response object
     const response = {

@@ -4,11 +4,18 @@ const { google } = require('googleapis');
 const path = require('path');
 const fs = require('fs');
 
-// Load service account credentials
-const keyFilePath = process.env.GOOGLE_KEYFILE_PATH;
+const keyFileBase64 = process.env.GOOGLE_KEYFILE_BASE64;
+const keyFilePath = path.join('/tmp', 'bitebookerservicekey.json');
+
+fs.writeFileSync(keyFilePath, Buffer.from(keyFileBase64, 'base64'));
+
 
 if (!keyFilePath) {
     throw new Error("Environment variable GOOGLE_KEYFILE_PATH is not set.");
+}
+// Ensure the file exists before proceeding
+if (!fs.existsSync(keyFilePath)) {
+    throw new Error(`Key file not found at path: ${keyFilePath}`);
 }
 
 // Create a GoogleAuth instance

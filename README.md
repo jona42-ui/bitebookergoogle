@@ -43,11 +43,11 @@ This repository contains the implementation of a booking server using Node.js, d
 
 3. **Set up the environment variables:**
    ```bash
-    PORT=8080
+    PORT=portno.
     PRIVATE_KEY_PATH=/path/to/your/private/key
-    MERCHANT_USERNAME=feeds-430jb4
-    AVAIL_USERNAME=feeds-82dgm1
-    SERVICE_USERNAME=feeds-599sb1
+    MERCHANT_USERNAME=username
+    AVAIL_USERNAME=username
+    SERVICE_USERNAME=username
     BASIC_AUTH_USERNAME=your-username
     BASIC_AUTH_PASSWORD=your-password
     GOOGLE_KEYFILE_PATH=/path/to/your/service-account-key.json

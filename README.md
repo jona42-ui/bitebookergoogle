@@ -1,5 +1,7 @@
 # BiteBooker Google Booking Server
 
+![alt text](image-1.png)
+
 ## Overview
 
 This repository contains the implementation of a booking server using Node.js, designed to integrate with Google's Maps Booking API (API v3). The server supports core booking operations and real-time updates (RTU) for bookings made through Google services like Google Maps and Google Search.
